@@ -1,0 +1,28 @@
+{
+    "applications": [
+        {
+            "appId": "app-a",
+            "name": "App A",
+            "title": "App A",
+            "description": "App A for FDC3 intent demo",
+            "type": "web",
+            "details": {
+                "url": "http://localhost:5173"
+            },
+            "version": "1.0.0",
+            "publisher": "Demo",
+            "interop": {
+                "intents": {
+                    "listensFor": {
+                        "CounterValue": {
+                            "contexts": ["fdc3.counter"],
+                            "displayName": "Receive Counter Value"
+                        }
+                    },
+                    "raises": ["IncrementCounter"]
+                }
+            }
+        }
+    ],
+    "message": "OK"
+}
